@@ -84,12 +84,12 @@ export const defaultDoc: Doc = {
   offset: {
     distance: 12,
     distanceJitter: 3, // px
-    angleJitter: 90, // degrees
+    angleJitter: 5, // degrees
   },
   split: {
     spacing: 80,
     fit: true,
-    offset: -77,
+    offset: -3,
     phase: 0,
     jitter: 5,
   },
