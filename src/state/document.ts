@@ -68,7 +68,7 @@ export interface ExportOptions {
 }
 
 export const defaultDoc: Doc = {
-  text: "Louisiana",
+  text: "Type Shards",
   font: "roboto",
   variations: {},
   features: {},
@@ -80,20 +80,20 @@ export const defaultDoc: Doc = {
   align: "left",
   wrap: false,
   wrapWidth: 1000,
-  seed: 3,
+  seed: 7,
   offset: {
-    distance: 12,
+    distance: 13,
     distanceJitter: 3, // px
     angleJitter: 5, // degrees
   },
   split: {
     spacing: 80,
     fit: true,
-    offset: -3,
+    offset: -5,
     phase: 0,
-    jitter: 5,
+    jitter: 3,
   },
-  pieces: { rotationJitter: 3, scaleJitter: 20, gaps: 0 },
+  pieces: { rotationJitter: 4, scaleJitter: 20, gaps: 0 },
   stroke: { width: 4, widthJitter: 2, dropTails: true },
   outline: { lineCap: "butt", lineJoin: "miter", miterLimit: 4 },
   appearance: {
