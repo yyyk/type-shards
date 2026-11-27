@@ -30,10 +30,11 @@ never reshuffles another.
 
 The settings are in three tabs: Text, Shards and Output.
 
-- **Text**: any text over several lines, a built-in font (Roboto, Roboto Flex)
-  or your own (.ttf, .otf), size, line height, letter and word spacing,
-  alignment and wrapping. **Type details** has the font's variable axes (Roboto
-  Flex has 13) and its OpenType features.
+- **Text**: any text over several lines, a built-in font (Roboto, Roboto Flex,
+  Fraunces, Playfair Display, Bricolage Grotesque, Oswald, Zen Kaku Gothic New,
+  Jost, Outfit, Montserrat, Noto Sans) or your own (.ttf, .otf), size, line
+  height, letter and word spacing, alignment and wrapping. **Type details** has
+  the font's variable axes (Roboto Flex has 13) and its OpenType features.
 - **Split, Offset, Pieces, Line, Appearance**: the steps above, each with its
   amounts and jitters.
 - **Random**: the seed, with a button to shuffle it.
@@ -77,5 +78,7 @@ every push and pull request.
 
 ## License
 
-[MIT](LICENSE). The Roboto and Roboto Flex fonts in `public/fonts` are under the
-SIL Open Font License (`Roboto-OFL.txt`, `RobotoFlex-OFL.txt`).
+[MIT](LICENSE). The fonts in `public/fonts` (Roboto, Roboto Flex, Fraunces,
+Playfair Display, Bricolage Grotesque, Oswald, Zen Kaku Gothic New, Jost,
+Outfit, Montserrat, Noto Sans) are under the SIL Open Font License, each with
+its own `*-OFL.txt`.

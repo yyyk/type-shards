@@ -82,14 +82,17 @@ export function TextSection({
     }
   }
 
-  // the built-in fonts, loaded or not, then the uploaded ones
+  // the built-in fonts, loaded or not, then the uploaded ones, each by name
+  const byLabel = (a: { label: string }, b: { label: string }) =>
+    a.label.localeCompare(b.label)
   const builtinItems = BUILTIN_FONTS.map((f) => ({
     value: f.id,
     label: f.name,
-  }))
+  })).sort(byLabel)
   const uploadedItems = fonts
     .filter((f) => !BUILTIN_FONTS.some((b) => b.id === f.id))
     .map((f) => ({ value: f.id, label: f.name }))
+    .sort(byLabel)
   const fontItems = [...builtinItems, ...uploadedItems]
   const instances = font.namedInstances()
   const instance = matchingInstance(font, doc.variations)

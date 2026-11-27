@@ -22,6 +22,51 @@ export const BUILTIN_FONTS = [
     name: "Roboto Flex",
     url: `${import.meta.env.BASE_URL}fonts/RobotoFlex.ttf`,
   },
+  {
+    id: "fraunces",
+    name: "Fraunces",
+    url: `${import.meta.env.BASE_URL}fonts/Fraunces.ttf`,
+  },
+  {
+    id: "playfair-display",
+    name: "Playfair Display",
+    url: `${import.meta.env.BASE_URL}fonts/PlayfairDisplay.ttf`,
+  },
+  {
+    id: "bricolage-grotesque",
+    name: "Bricolage Grotesque",
+    url: `${import.meta.env.BASE_URL}fonts/BricolageGrotesque.ttf`,
+  },
+  {
+    id: "oswald",
+    name: "Oswald",
+    url: `${import.meta.env.BASE_URL}fonts/Oswald.ttf`,
+  },
+  {
+    id: "zen-kaku-gothic-new",
+    name: "Zen Kaku Gothic New",
+    url: `${import.meta.env.BASE_URL}fonts/ZenKakuGothicNew-Regular.ttf`,
+  },
+  {
+    id: "jost",
+    name: "Jost",
+    url: `${import.meta.env.BASE_URL}fonts/Jost.ttf`,
+  },
+  {
+    id: "outfit",
+    name: "Outfit",
+    url: `${import.meta.env.BASE_URL}fonts/Outfit.ttf`,
+  },
+  {
+    id: "montserrat",
+    name: "Montserrat",
+    url: `${import.meta.env.BASE_URL}fonts/Montserrat-Regular.ttf`,
+  },
+  {
+    id: "noto-sans",
+    name: "Noto Sans",
+    url: `${import.meta.env.BASE_URL}fonts/NotoSans.ttf`,
+  },
 ] as const
 
 /** The font's family (and style, unless Regular) name, or `fallback`. */
