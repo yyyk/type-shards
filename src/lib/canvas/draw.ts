@@ -71,12 +71,21 @@ export function drawPieces(
   }: DrawOptions,
 ) {
   // a path for a line `width` device px wide
-  const path = (commands: readonly PathCommand[], width: number) =>
-    toPath2D(toScreen(commands, view, pixelSnap ? snapOffset(width) : null))
+  const path = (
+    commands: readonly PathCommand[],
+    width: number,
+    snap = pixelSnap,
+  ) => toPath2D(toScreen(commands, view, snap ? snapOffset(width) : null))
 
   for (const [i, piece] of pieces.entries()) {
     if ("outline" in piece) {
-      const outline = path(piece.outline, appearance.edgeWidth * view.scale)
+      // Not snapped when the line is thinner than a device pixel: its two
+      // sides would snap apart and cross
+      const outline = path(
+        piece.outline,
+        appearance.edgeWidth * view.scale,
+        pixelSnap && piece.strokeWidth * view.scale >= 1,
+      )
       if (!debugColors) {
         ctx.fillStyle = appearance.color
         ctx.fill(outline) // nonzero is the canvas default

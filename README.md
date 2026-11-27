@@ -28,6 +28,8 @@ never reshuffles another.
 
 ## What it does
 
+The settings are in three tabs: Text, Shards and Output.
+
 - **Text**: any text over several lines, a built-in font (Roboto, Roboto Flex)
   or your own (.ttf, .otf), size, line height, letter and word spacing,
   alignment and wrapping. **Type details** has the font's variable axes (Roboto
